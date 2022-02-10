@@ -1,0 +1,22 @@
+<meta>
+
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    };
+    function mostra(frase){
+        document.write(frase);
+    };
+
+    var minhaIdade = 18;
+    var idadeIrmão = 3;
+
+    mostra("A diferença de idade entre eu e meu irmão é" + (minhaIdade - idadeIrmão));
+    pulaLinha();
+
+
+    var ano = 2022
+    var depoisDaChegada = ano - 1500
+    var numeroDeGeracoes = Math.round(depoisDaChegada/28)
+    mostra("Considerando a média de 28 anos para um casal ter filhos, houveram " + numeroDeGeracoes + " gerações de brasileiros desde a chegada dos colonos.")
+</script>
