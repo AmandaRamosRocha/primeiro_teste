@@ -8,15 +8,56 @@
         document.write(frase);
     };
 
-    var minhaIdade = 18;
-    var idadeIrmão = 3;
+    var minhaIdade = prompt("Qual sua idade?");
+    var idadeIrmão = prompt("Qual a idade para comparar?");
 
-    mostra("A diferença de idade entre eu e meu irmão é" + (minhaIdade - idadeIrmão));
+    mostra("A diferença entre as duas idades é " + (minhaIdade - idadeIrmão));
     pulaLinha();
+    // versão do professor
+    // function pulaLinha() {
+    //     document.write("<br>");
+    // }
+    // function mostra(frase) {
+    //     document.write(frase);
+    // }
+    // var minhaIdade = 18;
+    // var idadeIrmao = 15;
+    // mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrmao));
+    // pulaLinha();
 
-
-    var ano = 2022
-    var depoisDaChegada = ano - 1500
+    var ano =  prompt("Em que ano estamos?");
+    var depoisDaChegada = ano - 1500;
     var numeroDeGeracoes = Math.round(depoisDaChegada/28)
-    mostra("Considerando a média de 28 anos para um casal ter filhos, houveram " + numeroDeGeracoes + " gerações de brasileiros desde a chegada dos colonos.")
+    mostra("Considerando a média de 28 anos para um casal ter filhos, houveram " + numeroDeGeracoes + " gerações de brasileiros desde a chegada dos colonos.");
+    // versão do professor
+    //     function pulaLinha() {
+    //         document.write("<br>");
+    //     }
+    //     function mostra(frase) {
+    //         document.write(frase);
+    //         pulaLinha();
+    //     }
+    //     var idadeMediaQuandoTemFilhos = 28;
+    //     var anoAtual = 2016; 
+    //     var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+    //     mostra(quantidadeDeGeracoes);
+    pulaLinha();
+    mostra("<hr><hr>");
+
+
+    function pula_Linha() {
+        document.write("<br><hr><br>");
+    }
+
+    function exibe(frase) {
+        document.write("<big>" + frase + "<big>");
+        pula_Linha();
+    }
+
+    var ano = 2019;
+    exibe("Eu nasci em : " + (ano - 25));
+    exibe("Adriano nasceu em : " + (ano - 26));
+    exibe("Paulo nasceu em : " + (ano - 32));
+    
+    
 </script>
