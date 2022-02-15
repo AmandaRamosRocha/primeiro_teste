@@ -1,0 +1,68 @@
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+    mostra(7 * multiplicador);
+
+}
+/////////////
+
+// var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+
+// var numero = 1;
+// var totalIdades = 0;
+
+// while(numero <= totalFamiliares) {
+//     var idade = parseInt(prompt("Informe idade do familiar"));
+//     totalIdades = totalIdades + idade;
+//     numero++;
+
+// }
+// var mediaDasIdades = totalIdades/totalFamiliares
+// mostra("A média das idades dos familiares é " + mediaDasIdades);
+
+////////////
+
+for(var linha = 1; linha <= 3; linha++) {
+
+    for(var coluna = 1; coluna <= 10; coluna++) {
+        document.write("*");
+    }
+    pulaLinha();
+}
+
+//////////////
+
+var numeroPensado = Math.round(Math.random()*10);
+var chute = parseInt(prompt("Diga seu chute"));
+
+if(chute==numeroPensado){
+    alert("Parabens, você acertou");
+}else{
+    for(var n=0; n<3; n++){
+        chute = prompt("Você errou, tente novamente")
+        if(chute==numeroPensado){
+            alert("Você acertou")
+            n=3
+        }if(n==2){
+        alert("Errou, o numero pensado foi " + numeroPensado)
+        }
+    }
+}
+console.log(numeroPensado);
+
+mostra("FIM");
+
+</script>

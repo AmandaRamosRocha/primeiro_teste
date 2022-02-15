@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+
+<h1>Receitas do Yan</h1>
+
+<script>
+    var ingredientes = [];
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+    var contador = 0;
+
+    while( contador < quantidade) {
+
+        var ingrediente = prompt("Informe o " + (contador+1) + "° ingrediente ");
+
+        var repetido = false
+        for(n=0; n<=ingredientes.length;n++){
+            if(ingrediente == ingredientes[n]){
+                repetido = true
+                alert("Este ingrediente já está na lista")
+                break;
+            }
+        }
+        if(repetido == false){
+            ingredientes.push(ingrediente);
+            document.write(ingrediente + "<br>")
+            contador++;
+        }
+    }
+
+// <h1>Receitas do Yan</h1>
+
+// <script>
+//     var ingredientes = [];
+
+//     var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+
+//     var contador = 1;
+
+//     while( contador <= quantidade) {
+
+//         var ingrediente = prompt("Informe o ingrediente " + contador);
+
+//         var existe = false;
+
+//         for( var posicao = 0; posicao < ingredientes.length; posicao++) {
+
+//             if( ingredientes[posicao] == ingrediente) {
+
+//                 existe = true;
+//                 break;
+//             }
+//         }
+
+//         if( existe == false) {
+
+//             ingredientes.push(ingrediente);
+//             contador++;
+//         }
+//     }
+
+//     console.log(ingredientes);
+</script>
